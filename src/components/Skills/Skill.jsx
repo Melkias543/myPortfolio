@@ -8,7 +8,7 @@ import mysql from "../../assets/mysql.png";
 import node from "../../assets/node.png";
 import css from "../../assets/css.jpeg";
 import react from "../../assets/react.png";
-import Jquery from "../../assets/jquery.jpeg";
+import Jquery from "../../assets/Jquery.png";
 import { Link } from 'react-router-dom';
 import download from '../../assets/image/download.png'
 import taiwind from "../../assets/image/taiwind.png";
