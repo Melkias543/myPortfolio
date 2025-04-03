@@ -1,0 +1,50 @@
+
+.skill-list{
+  list-style: none;
+  height: 20vh;
+ align-items: center;
+ animation: moveImages 20s linear infinite;
+}
+.skill-list li img{
+  display: flex;
+  width: 70px;
+  align-items: center;
+  border-radius: 10px;
+
+}
+.skill h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+ .My_cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+ }
+ .My_cv img{
+  width: 40px;
+ }
+ .My_cv a ,img{
+background: rgb(160, 243, 201);
+padding: 6px;
+border-radius: 10px;
+text-decoration: none;
+color: black;
+cursor: pointer;
+ }
+.skill-list li:hover {
+  transform: scale(1.5); 
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}

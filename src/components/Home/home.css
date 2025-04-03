@@ -1,0 +1,85 @@
+.home_wrapper{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Absolutely position inside .image_container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Ensures text is centered */
+  color: white;
+ 
+ 
+}
+.name h1 {
+ font-weight:bolder;
+ font-size: 50px;
+}
+
+
+h1, h2 {
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 2s ease-out forwards; 
+  
+}
+.name h1 {
+  animation-delay: 0.5s; /* Delay the animation for <h1> */
+}
+
+.name h2 {
+  animation-delay: 1s; /* Delay the animation for <h2> */
+}
+
+.descripion {
+  display: flex;
+  flex: 2;
+  margin-top: 30px;
+ font-size: 20px;
+}
+
+.image_container {
+  position: relative; /* Ensures child elements can be positioned */
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../assets/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+
+@media (max-Width:768px) {
+  .image_container .name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }
+ .image_container .name h1{
+ font-size: 40px;
+ } 
+}

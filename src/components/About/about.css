@@ -1,0 +1,53 @@
+.descripion{
+   padding-top: 120px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+   align-items: center;
+}
+.image{
+  flex: 3;
+}
+.background{
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  font-size: 30px;
+}
+
+.bg-container{
+
+  flex: 3;
+  padding: 20px;
+  object-fit: cover;
+
+}
+
+.descripion{
+  margin-top: 40px;
+  padding: 10px;
+}
+.header {
+  display: flex;
+}
+.bg-container h3{
+  margin: 20px;
+}
+.image img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ flex: 3;
+  margin: 20px;
+  margin-right: 20px;
+  border-radius: 5%;
+}
+
+
+
+
+
+
+

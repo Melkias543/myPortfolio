@@ -1,0 +1,50 @@
+.service {
+  margin: 80px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+.WhatIam {
+  font-size: 20px;
+  font-weight: 500;
+}
+.service_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.upper,
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.innerDiv {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.innerDiv:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .upper,
+  .bottom {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,35 @@
+
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form  .inputs input {
+  padding: 10px;
+  text-align: inherit;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  
+}
+.form textarea{
+  padding: 10px;
+  border: none;
+   border-radius: 5px;
+     border: 1px solid lightgray;
+     width: 430px;
+
+}
+.form button {
+background: black; 
+color: white;
+padding:6px;
+width: 150px;
+border: none;
+border: 1px solid gray;
+border-radius: 5px;
+margin-left: 200px;
+
+}
