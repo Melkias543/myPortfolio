@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-// import { Link as RouterLink } from "react-router-dom"; // Renaming for clarity
-// import { Link as ScrollLink } from "react-scroll";
+
 
 import "./nav.css";
 import logo from "../../assets/image/logo.png";
