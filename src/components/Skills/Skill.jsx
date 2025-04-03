@@ -8,7 +8,7 @@ import mysql from "../../assets/mysql.png";
 import node from "../../assets/node.png";
 import css from "../../assets/css.jpeg";
 import react from "../../assets/react.png";
-import jquery from "../../assets/jquery.jpeg";
+import Jquery from "../../assets/jquery.jpeg";
 import { Link } from 'react-router-dom';
 import download from '../../assets/image/download.png'
 import taiwind from "../../assets/image/taiwind.png";
@@ -35,7 +35,7 @@ return (
         <img src={js} alt="javascript" />
       </li>
       <li>
-        <img src={jquery} alt="jquery" />
+        <img src={Jquery} alt="jquery" />
       </li>
       <li>
         <img src={node} alt="node js" />{" "}
