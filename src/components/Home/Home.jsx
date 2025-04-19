@@ -8,7 +8,7 @@ function Home() {
       <div className="image_container">
         <div className="name">
           <h1>Hi, I'm Melkias Teshoma</h1>
-          <h2>a Talented FullStack Web Developer</h2>
+          <h2>A Talented FullStack Web Developer</h2>
         </div>
       </div>
     </section>
