@@ -83,3 +83,22 @@ h1, h2 {
  font-size: 40px;
  } 
 }
+
+@media (max-Width:555px) {
+  body{
+    scroll-margin-left: none;
+    scroll-margin-right: none;
+  }
+  .image_container .name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }
+ .image_container .name h1{
+ font-size: 30px;
+ } 
+ .image_container .name h2{
+ font-size: 20px;
+ } 
+}

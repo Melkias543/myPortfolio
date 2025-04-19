@@ -31,7 +31,7 @@ function Footer() {
               >
                 <img src={linkdin} alt="linkidin icon" />
               </a>
-              <span to="tel">Call Me: +251 919 779 032</span>
+              <span id='tel' to="tel">Call Me: +251 919 779 032</span>
             </div>
             <p> &#169; 2024 Melkias. All rights Reserved.</p>
           </div>

@@ -1,30 +1,29 @@
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
   padding-bottom: 20px;
-  
 }
-.contact_wrapper{
+.contact_wrapper {
   width: 100%;
 }
 
-.contacts{
- background-color: rgb(52, 51, 53) !important;
+.contacts {
+  background-color: rgb(52, 51, 53) !important;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   gap: 340px;
-   width: 100%;
-    padding: 20px;
-    margin-top: 40px;
-    color: white;
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+  color: white;
 }
-.connections img{
+.connections img {
   width: 30px;
 }
-.contacts p{
+.contacts p {
   font-size: 20px;
 }
 .contact_wrapper {
@@ -43,15 +42,38 @@
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    margin: 20px;
+    justify-content: center;
+    margin: 0% !important;
+   margin-left: -55px !important;
   }
-  .footer{
+  .footer {
     margin: 30px;
+    width: 100%;
   }
   .contact_wrapper {
     display: flex;
     flex-direction: column;
-  justify-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .connections #tel {
+    display: none;
+  }
+  .contacts p {
+    font-size: small;
+  }
+  .contacts .connections {
+    justify-content: space-evenly;
+    
+
+  }
+   .contacts .connections a{
+  width: 5px;
+  }
+.contacts p {
   align-items: center;
+ justify-content: center;
+ margin-top: 5px;
+ margin-left: 80px;
   }
 }

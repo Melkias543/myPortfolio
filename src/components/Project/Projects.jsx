@@ -8,7 +8,7 @@ function Projects() {
     <div className="text-center project" id="project">
       <h1>Recent Works</h1>
 
-      <div className="d-flex gap-4 align-items-center  justify-content-cente m-5 project_containar ">
+      <div className="d-flex gap-4 align-items-center images justify-content-cente m-5 project_containar ">
         <Link to="https://github.com/Melkias543/Clone_Netflix">
           <img src={netflix} alt="" target="blank" />
         </Link>

@@ -45,6 +45,17 @@
   border-radius: 5%;
 }
 
+@media (max-Width:555px){
+.descripion{
+    scroll-margin-left: none;
+    scroll-margin-right: none;
+    width: 100%;
+}
+.image img{
+  width: 80%;
+}
+
+}
 
 
 

@@ -33,3 +33,20 @@ border-radius: 5px;
 margin-left: 200px;
 
 }
+
+@media (max-Width:555px){
+.inputs{
+display: flex;
+flex-direction: column;
+}
+.myForm textarea{
+  width: 100%;
+}
+.myForm {
+  width: 90%;
+}
+
+.form button {
+  margin-left: -1px;
+}
+}

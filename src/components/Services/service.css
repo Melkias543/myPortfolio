@@ -48,3 +48,15 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 555px) {
+  .upper,
+  .bottom {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .service{
+    max-width: fit-content;
+  }
+}

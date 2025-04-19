@@ -21,14 +21,14 @@ function Contacts() {
   };
 
   return (
-    <div>
+    <div className="myForm">
       <form
         className="form"
         action="https://formspree.io/f/mpwpplqj"
         onSubmit={handleSubmit}
         method="post"
       >
-        <div className="d-flex inputs gap-4">
+        <div className="d-flex  inputs gap-4">
           <input
             onChange={handleChange}
             type="text"
