@@ -15,7 +15,7 @@ function Footer() {
           </h2>
         </div>
         <div className="contact_wrapper">
-          <h1>Contacts</h1>
+          <h1>Contact Me</h1>
           <Contacts />
           <div className="contacts">
             <div className="d-flex connections gap-5">
@@ -31,7 +31,9 @@ function Footer() {
               >
                 <img src={linkdin} alt="linkidin icon" />
               </a>
-              <span id='tel' to="tel">Call Me: +251 919 779 032</span>
+              <span id="tel" to="tel">
+                Call Me: +251 919 779 032
+              </span>
             </div>
             <p> &#169; 2024 Melkias. All rights Reserved.</p>
           </div>

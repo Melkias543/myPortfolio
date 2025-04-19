@@ -50,9 +50,17 @@
     scroll-margin-left: none;
     scroll-margin-right: none;
     width: 100%;
+    font-size: 16px;
 }
+
 .image img{
-  width: 80%;
+  width:100%;
+}
+.image{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 }

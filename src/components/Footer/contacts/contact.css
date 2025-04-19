@@ -43,7 +43,9 @@ flex-direction: column;
   width: 100%;
 }
 .myForm {
-  width: 90%;
+  width:100%;
+  margin-left: -50px;
+  margin-right: 2px;
 }
 
 .form button {

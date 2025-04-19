@@ -82,6 +82,9 @@ h1, h2 {
  .image_container .name h1{
  font-size: 40px;
  } 
+ .image{
+  height: 100vh;
+ }
 }
 
 @media (max-Width:555px) {
