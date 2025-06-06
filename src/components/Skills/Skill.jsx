@@ -17,7 +17,7 @@ return (
   <div className="skill" id="skill">
     <h1>
       <strong>Skills</strong>
-      <h3 className=' pt-1'>
+      <h3 className=" pt-1">
         <em>React is my favorite!</em>
       </h3>
     </h1>
@@ -54,7 +54,7 @@ return (
       </li>
     </ul>
     <span className="My_cv">
-      <Link to="Melkias.udacity.PDF" target="_blank">
+      <Link to="Melkias.Teshoma.resume.pdf" target="_blank">
         Download My Cv <img src={download} alt="" />{" "}
       </Link>
     </span>
