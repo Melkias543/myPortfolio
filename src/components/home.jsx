@@ -17,12 +17,14 @@ const Home = () => {
       {/* Overlay to make content stand out */}
       <div className="relative z-10 text-center text-white max-w-2xl">
         {/* Name */}
-        <h1 className="text-7xl md:text-5xl font-bold text-teal-300 mb-4">
+        <h1
+          className="font-bold text-teal-300 mb-4 whitespace-nowrap"
+          style={{ fontSize: "clamp(2rem, 5vw, 5rem)" }}
+        >
           Hi, I’m Melkias Teshoma
         </h1>
 
-        {/* Subtitle */}
-        <p className=" md:text-lg mb-6 text-4xl">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6">
           Full-Stack Web Developer — I Turn Ideas Into Web Experiences
         </p>
 
