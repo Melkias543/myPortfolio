@@ -1,60 +1,85 @@
 import Link from "next/link";
 import React from "react";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
     <section
-      className="relative min-h-[350px] md:min-h-[500px] flex flex-col justify-center items-center py-16 md:py-24 px-6 md:px-20 scroll-mt-24"
+      className="relative min-h-screen flex flex-col justify-center items-center py-16 md:py-24 px-6 md:px-20 scroll-mt-24 bg-transparent"
       id="home"
     >
-      {/* Background Image */}
+      {/* Background Image with overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat filter blur-sm brightness-100"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/image.png')" }}
-      ></div>
+      />
+      <div className="absolute inset-0 bg-black/60" />
 
-      {/* Overlay to make content stand out */}
-      <div className="relative z-10 text-center text-white max-w-2xl">
-        {/* Name */}
-        <h1
-          className="font-bold text-teal-300 mb-4 whitespace-nowrap"
-          style={{ fontSize: "clamp(2rem, 5vw, 5rem)" }}
+      <div className="relative z-10 text-center text-white max-w-3xl">
+        {/* Badge */}
+        <div
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium mb-6"
+          style={{ backgroundColor: '#fd590020', color: '#fd5900', border: '1px solid #fd590040' }}
         >
-          Hi, I’m Melkias Teshoma
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+          Available for work
+        </div>
+
+        <h1
+          className="font-extrabold mb-4 leading-tight"
+          style={{ color: '#ffffff', fontSize: 'clamp(2.2rem, 5vw, 4.5rem)' }}
+        >
+          Hi, I&apos;m{" "}
+          <span style={{ color: '#fd5900' }}>Melkias Teshoma</span>
         </h1>
 
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6">
-          Full-Stack Web Developer — I Turn Ideas Into Web Experiences
+        <p className="text-gray-300 text-lg sm:text-xl md:text-2xl mb-10 leading-relaxed">
+          Full-Stack  Developer — I Turn Ideas Into Web Experiences
         </p>
 
-        {/* Call to Action */}
-        <div className="flex flex-col gap-4 items-center">
-          <div className="flex gap-4 flex-wrap justify-center">
-            <Link
-              href="#projects"
-              className="px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-300 hover:text-black transition"
-            >
-              View Projects
-            </Link>
-            <Link
-              href="#contact"
-              className="px-6 py-3 border border-teal-600 text-teal-600 font-medium rounded-lg hover:bg-teal-600 hover:text-white transition"
-            >
-              Contact Me
-            </Link>
-          </div>
-
-          {/* Resume Button */}
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap gap-4 justify-center mb-8">
+          <Link
+            href="#projects"
+            className="px-7 py-3 text-white font-semibold rounded-lg transition-opacity hover:opacity-90"
+            style={{ backgroundColor: '#fd5900' }}
+          >
+            View Projects
+          </Link>
+          <Link
+            href="#contact"
+            className="px-7 py-3 font-semibold rounded-lg text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-colors"
+          >
+            Contact Me
+          </Link>
           <a
             href="/Melkias.Teshoma.resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 mt-4 px-6 py-3 bg-teal-950 text-rose-50 font-medium rounded-lg hover:bg-teal-600 transition"
+            className="flex items-center gap-2 px-7 py-3 font-semibold rounded-lg text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-colors"
           >
             <HiOutlineDocumentDownload className="w-5 h-5" />
             Resume
           </a>
+        </div>
+
+        {/* Social links */}
+        <div className="flex justify-center gap-4">
+          {[
+            { href: "https://github.com/Melkias543", icon: <FaGithub className="w-5 h-5" /> },
+            { href: "https://www.linkedin.com/in/melkias-teshoma-738069347/", icon: <FaLinkedin className="w-5 h-5" /> },
+          ].map(({ href, icon }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-400 hover:text-white bg-white/10 hover:bg-white/20 transition-colors"
+            >
+              {icon}
+            </a>
+          ))}
         </div>
       </div>
     </section>
