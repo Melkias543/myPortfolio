@@ -28,7 +28,7 @@ const Home = () => {
 
         <h1
           className="font-extrabold mb-4 leading-tight"
-          style={{ color: '#ffffff', fontSize: 'clamp(2.2rem, 5vw, 4.5rem)' }}
+          style={{ color: '#ffffff', fontSize: 'clamp(2rem, 3vw, 3.5rem)' }}
         >
           Hi, I&apos;m{" "}
           <span style={{ color: '#fd5900' }}>Melkias Teshoma</span>
