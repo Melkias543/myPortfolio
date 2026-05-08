@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
+import { ChatProvider } from "@/components/ChatContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" />
-
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ChatProvider>
+          {children}
+          <ChatWidget />
+        </ChatProvider>
       </body>
     </html>
   );
