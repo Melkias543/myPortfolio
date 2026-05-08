@@ -12,8 +12,4 @@ I'm Melkias, a full-stack developer based in Ethiopia, specializing in building 
 
 - Next.js
 - Tailwind CSS
-- Node.js / MongoDB
 
-## Getting Started
-
-```bash
