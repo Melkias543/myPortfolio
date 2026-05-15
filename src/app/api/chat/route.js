@@ -232,6 +232,6 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
     return Response.json({ reply });
   } catch (err) {
     console.error(err);
-    return Response.json({ reply: "Sorry, I'm having trouble right now. Please try contacting Melkias directly at <a href='mailto:milkyinku@gmail.com'>milkyinku@gmail.com</a>." }, { status: 500 });
+    return Response.json({ reply: "Sorry, I'm having trouble right now. Please try contacting Melkias directly at milkyinku@gmail.com." }, { status: 500 });
   }
 }
