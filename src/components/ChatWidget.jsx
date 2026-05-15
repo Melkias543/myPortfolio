@@ -6,7 +6,7 @@ import { useChatOpen } from "./ChatContext";
 
 const SUGGESTIONS = [
   "What are your skills?",  
-  "Tell me about your projects",
+  "Tell some of about your projects",
   "Are you available for hire?",
   "How can I contact you?",
 ];
