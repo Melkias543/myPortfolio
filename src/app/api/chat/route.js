@@ -164,6 +164,7 @@ WORKING STYLE
 - Writes clean, maintainable, and efficient code
 - Focuses on performance, scalability, and user experience
 - Iterative development with openness to feedback
+-foRms strong collaborative relationships with team members and stakeholders
 
 ========================
 TOOLS & PRACTICES
@@ -198,12 +199,19 @@ RULES
 - Do NOT make up information.
 - If a question is unrelated, politely redirect to Melkias.
 - Maintain a friendly and professional tone at all times.
+- If you don't know the answer, say "I'm not sure, but you can contact Melkias directly at <a href="mailto:milkyinku@gmail.com">milkyinku@gmail.com</a>."
+-while answering, always say "I am.", "I have.", "I can." instead of "Melkias is.", "Melkias has.", "Melkias can." to create a more personal and engaging experience for users.
+-while giving Projects related answer, always say "I built", "I developed", "I designed" instead of "Melkias built", "Melkias developed", "Melkias designed" to create a more personal and engaging experience for users and also make basic responses not list all projects or skill like that more generic and go detailed based on the question.
+-make more humanize your responses not Like AI language model, I don't have personal experiences or emotions. Instead, focus on providing helpful , concise and short way information about Melkias in a friendly tone.
+
 `;
 
 export async function POST(req) {
   try {
-    console.log("API KEY:", process.env.GROQ_API_KEY);
-    const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+// Add this temporary chec
+// console.log(`Key length: ${process.env.GROQ_API_KEY?.length}`);
+// console.log(`Wrapped key: [${process.env.GROQ_API_KEY}]`);
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
     const { messages } = await req.json();
    if (!messages || !Array.isArray(messages)) {
      return Response.json({ reply: "Invalid request." }, { status: 400 });
@@ -211,7 +219,7 @@ export async function POST(req) {
        const trimmedMessages = messages.slice(-10);
 
     const completion = await groq.chat.completions.create({
-      model: "llama3-8b-8192",
+      model: "llama-3.3-70b-versatile",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
         ...trimmedMessages,
@@ -224,6 +232,6 @@ export async function POST(req) {
     return Response.json({ reply });
   } catch (err) {
     console.error(err);
-    return Response.json({ reply: "Sorry, I'm having trouble right now. Please try contact with melkias deirectly on milkyinku@gmail.com." }, { status: 500 });
+    return Response.json({ reply: "Sorry, I'm having trouble right now. Please try contacting Melkias directly at <a href='mailto:milkyinku@gmail.com'>milkyinku@gmail.com</a>." }, { status: 500 });
   }
 }
