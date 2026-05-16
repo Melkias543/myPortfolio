@@ -3,14 +3,65 @@ import Link from "next/link";
 import { FaReact, FaGithub } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
-
+// https://github.com/Melkias543/Language_translater_for_healthcare_som_and_am
 const projects = [
+
+  
+{
+  name: "Healthcare Translator",
+    description: "A healthcare translation system that enables seamless communication between healthcare providers and patients speaking different languages, with support for Amharic and Afan Somali. It features real-time speech recognition, text-to-speech, and medical-term-aware translation, along with a Flutter mobile app, web dashboard, and REST API for integration.",
+    github: "https://github.com/Melkias543/Language_translater_for_healthcare_som_and_am",
+    image: "lang_translater.png",
+    techIcon:null,
+    techStack: ["Python", "Flutter", "MongoDB",   "NLLB (No Language Left Behind)","Whisper (Speech Recognition)","Text-to-Speech (TTS)"],
+    site:null,
+  },
+
+
+{
+  name: "Toxido Man Suit",
+    description: "Developed “Toksido Suit,” a full-stack e-advertising platform for a private client in Harar using Next.js, TypeScript, Node.js, and MongoDB, enabling a seamless and scalable advertisement management experience.",
+    github: "https://github.com/Melkias543/toksido-suit/",
+    image: "/toksido.png",
+    techIcon: null,
+    techStack: ["Next.js", "TypeScript", "MongoDB", "Node.js","Tailwind CSS","Express"],
+    site: null,
+  },
+
+
+  {
+  name: "Debter Link – School Ecosystem Platform",
+  description: "A full-stack digital ecosystem designed to connect and streamline interactions across schools, including students, teachers, and administrators. The platform centralizes communication, data management, and service access, improving efficiency and collaboration within the education system.",
+  github: "https://github.com/Melkias543/debter_link_connect_all_school_ecosystem",
+  image: "/dabter_link.png",
+  techIcon: null,
+  techStack: [
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "Express",
+    "Tailwind CSS"
+  ],
+  site: null,
+},
+
+{
+     name: "University Non-Cafeteria Meal Management System",
+    description: "A web-based system designed to manage and streamline meal services for university students who do not use cafeteria facilities and use Local caffe by contract.",
+    github: "https://github.com/Melkias543/university_non_cafeteria_meal_system",
+    image: "/university_non_meal.png",
+    techIcon: null,
+    techStack: ["React.js", "TypeScript", "MYSQL", "PHP","Tailwind CSS","Laravel"],
+    site: "https://university-non-cafeteria-meal-syste.vercel.app/",
+  },
+
+
   {
     name: "University Clearance System",
     description: "Automates student clearance processes at Haramaya University using Next.js, TypeScript, MongoDB, and Node.js.",
     github: "https://github.com/Melkias543/University_Clerance_managemnt_system",
     image: "/clearnce.png",
-    techIcon: <SiNextdotjs className="text-white text-xl" />,
+    techIcon: null,
     techStack: ["Next.js", "TypeScript", "MongoDB", "Node.js"],
     site: null,
   },
@@ -19,7 +70,7 @@ const projects = [
     description: "Netflix clone fetching data from TMDB API, built with React and JavaScript for UI & API integration practice.",
     github: "https://github.com/Melkias543/Clone_Netflix",
     image: "/netfilx.png",
-    techIcon: <FaReact className="text-xl" style={{ color: '#fd5900' }} />,
+    techIcon: null,
     techStack: ["React", "JavaScript", "TMDB API", "CSS"],
     site: null,
   },
@@ -28,7 +79,7 @@ const projects = [
     description: "Amazon-like e-commerce site clone built with JavaScript for frontend functionality and product management.",
     github: "https://github.com/Melkias543/Amazon_Clone",
     image: "/amazon.png",
-    techIcon: <FaReact className="text-xl" style={{ color: '#fd5900' }} />,
+    techIcon: null,
     techStack: ["React", "Firebase", "JavaScript"],
     site: null,
   },
@@ -37,7 +88,7 @@ const projects = [
     description: "Discussion forum platform built for community engagement and topic-based discussions.",
     github: "https://github.com/Melkias543/evangadiForoum",
     image: "/evangadi.png",
-    techIcon: <FaReact className="text-xl" style={{ color: '#fd5900' }} />,
+    techIcon: null,
     techStack: ["React", "JavaScript", "Node.js", "MySQL", "Express"],
     site: null,
   },
@@ -46,7 +97,7 @@ const projects = [
     description: "Fullstack system for managing employee data, roles, and access built with React and Node.js.",
     github: "https://github.com/Melkias543/Fullstack_employe_management_system",
     image: "/employe.png",
-    techIcon: <FaReact className="text-xl" style={{ color: '#fd5900' }} />,
+    techIcon:null,
     techStack: ["React", "Node.js", "Express", "MySQL", "Bootstrap"],
     site: null,
   },
@@ -64,7 +115,7 @@ const projects = [
     description: "Personal portfolio built with Next.js and Tailwind CSS.",
     github: "https://github.com/Melkias543/myPortfolio",
     image: "/portifoli.png",
-    techIcon: <SiNextdotjs className="text-white text-xl" />,
+    techIcon: null,
     techStack: ["Next.js", "Tailwind CSS"],
     site: null,
   },
@@ -102,11 +153,19 @@ const Project = () => {
             )}
 
             <div className="p-5 flex flex-col flex-1">
-              <div className="flex items-center gap-2 mb-2">
-                {project.techIcon}
-                <h3 className="text-base font-semibold text-white leading-tight">{project.name}</h3>
-              </div>
+              {/* <div className="flex items-center gap-2 mb-2">
+              {project.techIcon ?? project.name?.charAt(0)}
+                  <h3 className="text-base font-semibold text-white leading-tight">{project.name}</h3>
+              </div> */}
+<div className="flex items-center gap-2 mb-2">
+  <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#1e1e1e] text-white font-bold">
+    {project.techIcon ? project.techIcon : project.name?.charAt(0)}
+  </div>
 
+  <h3 className="text-base font-semibold text-white leading-tight">
+    {project.name}
+  </h3>
+</div>
               <p className="text-gray-400 text-sm flex-1 mb-4 leading-relaxed">{project.description}</p>
 
               <div className="flex flex-wrap gap-1.5 mb-4">
